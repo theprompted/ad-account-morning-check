@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Account Morning Check — Claude Code Skill for Syndicate Members</title>
+    <title>Ad Account Morning Check — Claude Code Skill</title>
     <style>
         :root {
             --bg-page: #F8F8F7;
@@ -108,7 +108,7 @@
         .btn:active { transform: translate(2px, -2px); box-shadow: none; }
 
         .hero {
-            background: var(--bg-purple);
+            background: var(--bg-blue);
             border: var(--border);
             box-shadow: var(--shadow-lg);
             padding: 2.5rem 1.75rem;
@@ -125,21 +125,6 @@
         }
 
         .hero p { font-size: 1.05rem; max-width: 620px; margin: 0 auto 1rem; color: var(--text-gray); }
-
-        .members-only {
-            display: inline-block;
-            background: var(--accent-yellow);
-            color: var(--text-black);
-            border: var(--border);
-            box-shadow: var(--shadow-sm);
-            font-family: ui-monospace, monospace;
-            font-size: 0.75rem;
-            font-weight: 700;
-            letter-spacing: 0.06em;
-            padding: 0.4rem 0.85rem;
-            text-transform: uppercase;
-            margin-bottom: 1rem;
-        }
 
         ul, ol { margin: 0.75rem 0 1.25rem 1.5rem; }
         li { margin-bottom: 0.5rem; }
@@ -199,17 +184,7 @@
             margin-bottom: 0.75rem;
         }
 
-        .example .real-data-tag {
-            display: inline-block;
-            font-family: ui-monospace, monospace;
-            font-size: 0.7rem;
-            background: var(--bg-green);
-            border: 2px solid #2e7d32;
-            padding: 0.2rem 0.5rem;
-            margin-left: 0.5rem;
-        }
-
-        .example h3 { margin-bottom: 0.5rem; }
+        .example h3 { margin-bottom: 0.5rem; margin-top: 0.5rem; }
         .example .commentary {
             font-size: 0.9rem;
             color: var(--text-gray);
@@ -235,6 +210,31 @@
         table th { background: var(--bg-page); font-weight: 700; }
         table td.num { text-align: right; }
 
+        .step {
+            display: flex;
+            gap: 1rem;
+            margin: 1.25rem 0;
+            align-items: flex-start;
+        }
+
+        .step-num {
+            flex-shrink: 0;
+            width: 2rem;
+            height: 2rem;
+            background: var(--accent-yellow);
+            border: var(--border);
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: ui-monospace, monospace;
+            font-weight: 700;
+        }
+
+        .step-body { flex: 1; min-width: 0; }
+        .step-body h3 { margin-bottom: 0.5rem; }
+        .step-body p { margin-bottom: 0.5rem; }
+
         .footer {
             text-align: center;
             color: var(--text-muted);
@@ -253,28 +253,16 @@
         <!-- HERO -->
         <div class="hero">
             <div class="tag">Claude Code skill · The Prompted</div>
-            <span class="members-only">★ Syndicate Members Only</span>
             <h1>Ad Account Morning Check</h1>
-            <p>One command. Three answers every Meta + Shopify operator needs every morning before they touch anything.</p>
-            <p><strong>Yesterday's real contribution margin.</strong> <strong>Day-over-day trend.</strong> <strong>Paused ads that spent &gt;$50 last week.</strong></p>
+            <p>One command. Three answers for your morning Meta + Shopify check: yesterday's real contribution margin, day-over-day trend, and the paused-ads-with-spend audit.</p>
             <div style="margin-top: 1.5rem;">
                 <a class="btn" href="ad-account-morning-check.zip" download>↓ Download ZIP</a>
             </div>
         </div>
 
-        <!-- THE PROBLEM -->
+        <!-- WHAT IT DOES -->
         <div class="card">
-            <div class="card-header"><h2>Why this exists</h2></div>
-            <div class="card-content">
-                <p>Meta tells you ROAS. Shopify tells you revenue. Neither tells you whether you actually made money yesterday.</p>
-                <p>Every morning, most media buyers waste 10-15 minutes bouncing between Meta Ads Manager and Shopify Admin to assemble the same three answers. Then they make decisions on Meta's reported ROAS — which doesn't subtract COGS, shipping, payment processing, or returns.</p>
-                <p>This skill does the real math: starts from Shopify cash collected, subtracts your actual unit-economics costs, then subtracts ad spend. The number that comes out is <strong>what hit the bank after paying everything ad-related</strong>.</p>
-            </div>
-        </div>
-
-        <!-- WHAT YOU GET -->
-        <div class="card">
-            <div class="card-header"><h2>What you get</h2></div>
+            <div class="card-header"><h2>What it does</h2></div>
             <div class="card-content">
                 <div class="three-up">
                     <div class="item">
@@ -287,25 +275,23 @@
                     </div>
                     <div class="item">
                         <h4>Section 3</h4>
-                        <p><strong>Paused-with-spend audit.</strong> Every ad that spent &gt;$50 in the last 7 days that's currently paused. The "good ads stranded" list. One-glance recovery.</p>
+                        <p><strong>Paused-with-spend audit.</strong> Every ad that spent &gt;$50 in the last 7 days that's currently paused. The "good ads stranded" list.</p>
                     </div>
                 </div>
             </div>
         </div>
 
-        <!-- REAL EXAMPLE OUTPUTS -->
+        <!-- REAL EXAMPLES -->
         <div class="card">
-            <div class="card-header"><h2>Real outputs from a real account</h2></div>
+            <div class="card-header"><h2>Example outputs</h2></div>
             <div class="card-content">
-                <p>These are actual morning-check outputs from an active Shopify store running ~$700-$1,200/day on Meta. Numbers, dates, and decisions are unedited.</p>
+                <p>Pulled from real morning checks on a live store running ~$700-$1,200/day on Meta.</p>
 
                 <!-- Example 1: Good day -->
                 <div class="example">
-                    <span class="example-label">Example 1 — A strong CM day</span>
-                    <span class="real-data-tag">real data · May 13, 2026</span>
-                    <h3 style="margin-top: 0.5rem;">May 13, 2026 (Wednesday) — 26.7% contribution margin</h3>
+                    <span class="example-label">May 13, 2026 · Wed</span>
+                    <h3>A strong CM day — 26.7%</h3>
 
-                    <h4 style="margin-top: 1rem;">Revenue &amp; Margin</h4>
                     <table>
                         <tr><th>Metric</th><th class="num">USD</th></tr>
                         <tr><td>Cash collected</td><td class="num"><strong>$1,122.15</strong></td></tr>
@@ -318,23 +304,20 @@
                         <tr><td><strong>Contribution Margin</strong></td><td class="num"><strong>$299.89 (26.7%)</strong></td></tr>
                     </table>
 
-                    <h4>Vitals</h4>
                     <ul>
                         <li><strong>22 orders</strong> — AOV $51.01, 37 units (1.7/order)</li>
-                        <li><strong>Blended ROAS: 3.65x</strong> (healthy, well above ~2.05x break-even)</li>
-                        <li>Pre-ad margin <strong>54.1%</strong> — right on the 54-55% target</li>
+                        <li><strong>Blended ROAS: 3.65x</strong> (well above ~2.05x break-even)</li>
+                        <li>Pre-ad margin <strong>54.1%</strong> — on the 54-55% target</li>
                     </ul>
 
-                    <p class="commentary"><strong>What the operator learned:</strong> Spend $421 CAD, net $300 USD to the bank. ROAS of 3.65x sounds great on paper, and contribution margin of 27% confirms it was real. This is the day other days get measured against.</p>
+                    <p class="commentary"><strong>The read:</strong> Spend $421 CAD, net $300 USD to the bank. ROAS of 3.65x sounds great on paper, and contribution margin of 27% confirms it was real.</p>
                 </div>
 
                 <!-- Example 2: Marginal day -->
                 <div class="example">
-                    <span class="example-label">Example 2 — A break-even day in disguise</span>
-                    <span class="real-data-tag">real data · May 15, 2026</span>
-                    <h3 style="margin-top: 0.5rem;">May 15, 2026 (Friday) — only 7.1% contribution margin</h3>
+                    <span class="example-label">May 15, 2026 · Fri</span>
+                    <h3>A break-even day in disguise — only 7.1% CM</h3>
 
-                    <h4 style="margin-top: 1rem;">Revenue &amp; Margin</h4>
                     <table>
                         <tr><th>Metric</th><th class="num">USD</th></tr>
                         <tr><td>Cash collected</td><td class="num"><strong>$1,452.43</strong></td></tr>
@@ -343,9 +326,8 @@
                         <tr><td><strong>Contribution Margin</strong></td><td class="num"><strong>$103.23 (7.1%) ⚠️</strong></td></tr>
                     </table>
 
-                    <h4>Day-over-day</h4>
                     <table>
-                        <tr><th></th><th class="num">May 13 Wed</th><th class="num">May 14 Thu</th><th class="num">May 15 Fri</th></tr>
+                        <tr><th></th><th class="num">Wed 5/13</th><th class="num">Thu 5/14</th><th class="num">Fri 5/15</th></tr>
                         <tr><td>Revenue</td><td class="num">$1,122</td><td class="num">$854</td><td class="num"><strong>$1,452 ⬆</strong></td></tr>
                         <tr><td>Ad spend (CAD)</td><td class="num">$428</td><td class="num">$124</td><td class="num"><strong>$953 ⬆⬆</strong></td></tr>
                         <tr><td>AOV</td><td class="num">$51</td><td class="num">$66</td><td class="num"><strong>$48 ⬇</strong></td></tr>
@@ -354,14 +336,13 @@
                         <tr><td><strong>CM</strong></td><td class="num">$295 (26%)</td><td class="num">$353 (41%)</td><td class="num"><strong>$103 (7%) ⬇⬇</strong></td></tr>
                     </table>
 
-                    <p class="commentary"><strong>What the operator learned:</strong> Revenue was the highest of the three days. Meta-reported ROAS of 2.09x is "above break-even" — but contribution margin was only 7%. Without the morning check, you'd scale this day's ad set assuming it's profitable. With the check, you see the spend almost broke even after costs, and the AOV/units-per-order dropped — the signal that spend was flooding the auction with low-intent single-item buyers, not multi-item baskets.</p>
+                    <p class="commentary"><strong>The read:</strong> Revenue was the highest of the three days. Meta-reported ROAS of 2.09x is "above break-even" — but CM was only 7%. Without the morning check, you'd scale this day's ad set assuming it's profitable. With the check, the spend almost broke even after costs, and AOV/units-per-order dropped — the signal that spend was flooding the auction with low-intent single-item buyers, not multi-item baskets.</p>
                 </div>
 
                 <!-- Example 3: Paused-ad audit -->
                 <div class="example">
-                    <span class="example-label">Example 3 — Paused-ad audit result</span>
-                    <span class="real-data-tag">real data · May 17, 2026</span>
-                    <h3 style="margin-top: 0.5rem;">A $300 ad that auto-paused itself</h3>
+                    <span class="example-label">May 17, 2026 · Sun</span>
+                    <h3>A $300 ad that auto-paused itself</h3>
 
                     <pre class="output">==================================================
 PAUSED ADS WITH >$50 LAST 7D
@@ -372,62 +353,95 @@ PAUSED ADS WITH >$50 LAST 7D
     BB2 — I'm Retired V-neck Copy 2
     ad_id: 120215629113300199</pre>
 
-                    <p class="commentary"><strong>What the operator learned:</strong> A $300 spender stopped delivering. Meta's auction throttled it because the ROAS slipped under 1.0x. The audit caught it the next morning. The operator either revives the ad with a tighter cost cap, or accepts that it's done and moves the budget. Either way — surfaced in 30 seconds, not after a week of missed delivery.</p>
+                    <p class="commentary"><strong>The read:</strong> A $300 spender stopped delivering. Meta's auction throttled it because ROAS slipped under 1.0x. The audit caught it the next morning. Either revive with a tighter cost cap or accept it's done — surfaced in 30 seconds, not after a week of missed delivery.</p>
                 </div>
             </div>
         </div>
 
-        <!-- THE CM DIFFERENCE -->
+        <!-- WHAT YOU NEED -->
         <div class="card">
-            <div class="card-header"><h2>Why contribution margin and not ROAS?</h2></div>
+            <div class="card-header"><h2>What you need</h2></div>
             <div class="card-content">
-                <p>A Meta-reported 2.0x ROAS sounds profitable. But:</p>
                 <ul>
-                    <li><strong>COGS</strong> typically 30-40% of revenue</li>
-                    <li><strong>Shipping</strong> ~5-10% (your real cost, not what you charge)</li>
-                    <li><strong>Payment processing</strong> ~3-4%</li>
-                    <li><strong>Returns reserve</strong> ~2%</li>
-                    <li><strong>Ad spend</strong> already in the ROAS denominator</li>
-                </ul>
-                <p>At 2.0x ROAS with typical unit economics, contribution margin is often <strong>5-8%</strong> — barely above zero. The May 15 example above shows it: 2.09x ROAS, 7.1% CM. Scale at "2x ROAS" and you scale near break-even.</p>
-                <p>This skill makes you face the real number every morning, so the first decision of the day is grounded in actuals — not Meta's reported revenue.</p>
-            </div>
-        </div>
-
-        <!-- INSIDE THE SYNDICATE -->
-        <div class="card">
-            <div class="card-header"><h2>How to access this skill</h2></div>
-            <div class="card-content">
-                <p>The repo, install instructions, support, and the rest of the operator skill family (<strong>cost-cap-walkdown</strong>, <strong>attribution-adjusted-roas</strong>, and more) are available inside the Syndicate.</p>
-                <p>Syndicate members get:</p>
-                <ul>
-                    <li>This skill, fully installable in Claude Code with one prompt</li>
-                    <li>The full Claude Code operator skill family (morning check + walkdown + ROAS calibration + others as they ship)</li>
-                    <li>Live operator sessions where the skills are used on real ad accounts</li>
-                    <li>Support when something breaks — token expiry, attribution shifts, cron failures</li>
+                    <li><a href="https://claude.ai/code">Claude Code</a></li>
+                    <li>Python 3.9+</li>
+                    <li>A Meta Marketing API access token (System User token preferred — non-expiring)</li>
+                    <li>A Shopify Admin API access token with <code>read_orders</code>, <code>read_products</code>, <code>read_inventory</code> scopes</li>
+                    <li>Your unit-economics costs in a JSON file (template included in the ZIP)</li>
                 </ul>
             </div>
         </div>
 
-        <!-- COMING SOON -->
+        <!-- HOW TO INSTALL -->
         <div class="card">
-            <div class="card-header"><h2>Other skills in this family</h2></div>
+            <div class="card-header"><h2>How to install it</h2></div>
             <div class="card-content">
-                <p>This is the first of a family of operator skills for media buyers running $500-$3K/day on Meta + Shopify:</p>
-                <ul>
-                    <li><strong>cost-cap-walkdown</strong> — the $1-at-a-time cost cap adjustment methodology in 2-day cycles. Don't pause underperformers — walk them down until they're profitable or stop spending. Pairs with morning check (which identifies candidates).</li>
-                    <li><strong>attribution-adjusted-roas</strong> — calculate the Meta-reported ROAS goal you need to hit a target CM%, accounting for the gap between Meta-attributed and Shopify-actual revenue. Most operators trust Meta's ROAS at face value — this skill shows you why you shouldn't.</li>
-                </ul>
-                <p>All ship inside the Syndicate.</p>
+
+                <div class="step">
+                    <div class="step-num">1</div>
+                    <div class="step-body">
+                        <h3>Download the ZIP</h3>
+                        <p>Click the button above. Unzip it. You'll see <code>SKILL.md</code>, <code>scripts/morning_check.py</code>, <code>unit-economics.template.json</code>, <code>.env.template</code>, and <code>README.md</code>.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-num">2</div>
+                    <div class="step-body">
+                        <h3>Drop the skill into your Claude Code skills folder</h3>
+                        <p>Copy <code>SKILL.md</code> and <code>scripts/</code> into <code>~/.claude/skills/ad-account-morning-check/</code> (or your project's <code>.claude/skills/</code>).</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-num">3</div>
+                    <div class="step-body">
+                        <h3>Set up your tokens</h3>
+                        <p>Copy <code>.env.template</code> to <code>.env</code> at your project root and fill in:</p>
+                        <div class="code-block" onclick="copyCode(this)"><span class="copy-hint">click to copy</span>META_PAGE_TOKEN=EAA...
+META_AD_ACCOUNT_ID=act_1234567890
+SHOPIFY_STORE=yourstore.myshopify.com
+SHOPIFY_ACCESS_TOKEN=shpat_...</div>
+                        <p>Use a Meta System User token (Business Suite → System Users → Generate Token) — non-expiring. User tokens expire every 60 days and will silently break this skill when they do.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-num">4</div>
+                    <div class="step-body">
+                        <h3>Set up your unit economics</h3>
+                        <p>Copy <code>unit-economics.template.json</code> to <code>unit-economics.json</code> and fill in YOUR cost rates: default COGS %, shipping cost, processing %, returns reserve %, currency. These rates are the most important inputs — get them wrong and the CM number lies.</p>
+                    </div>
+                </div>
+
+                <div class="step">
+                    <div class="step-num">5</div>
+                    <div class="step-body">
+                        <h3>Run it</h3>
+                        <div class="code-block" onclick="copyCode(this)"><span class="copy-hint">click to copy</span>morning check</div>
+                        <p>Or any of: <code>"how are my ads doing"</code>, <code>"yesterday's performance"</code>, <code>"any ads paused"</code>, <code>"ad account check"</code>.</p>
+                    </div>
+                </div>
+
             </div>
         </div>
 
         <div class="footer">
-            Built by <a href="https://theprompted.com">The Prompted</a> — operators using AI in real DTC media buying, not theorizing about it.<br>
-            Skill bundle distilled from active ~$10K/month Meta spend across multiple Shopify accounts.
+            Built by <a href="https://theprompted.com">The Prompted</a>.
         </div>
 
     </div>
+
+    <script>
+        function copyCode(el) {
+            const text = el.innerText.replace('click to copy', '').trim();
+            navigator.clipboard.writeText(text);
+            const hint = el.querySelector('.copy-hint');
+            const original = hint.innerText;
+            hint.innerText = 'copied!';
+            setTimeout(() => hint.innerText = original, 1500);
+        }
+    </script>
 
 </body>
 </html>
