@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ad Account Morning Check — Free Claude Code Skill for Meta + Shopify Operators</title>
+    <style>
+        :root {
+            --bg-page: #F8F8F7;
+            --bg-white: #ffffff;
+            --bg-blue: #EBF9FF;
+            --bg-purple: #F7F1FF;
+            --bg-yellow: #FFFDE7;
+            --bg-green: #E8F5E9;
+            --accent-teal: #53DBC9;
+            --accent-yellow: #FFDE00;
+            --accent-purple: #9D4EDD;
+            --text-black: #000000;
+            --text-dark: #1a1a1a;
+            --text-gray: #4a4a4a;
+            --text-muted: #6b6b6b;
+            --shadow-lg: -0.31rem 0.31rem 0 0 #383838;
+            --shadow-sm: -0.19rem 0.19rem 0 0 #383838;
+            --border: 2px solid black;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+            font-size: 1rem;
+            line-height: 1.7;
+            color: var(--text-dark);
+            background: var(--bg-page);
+            padding: 2rem 1.5rem;
+        }
+
+        .container { max-width: 860px; margin: 0 auto; }
+
+        h1, h2, h3, h4 {
+            font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+            font-weight: 700;
+            color: var(--text-black);
+        }
+
+        h1 { font-size: 2.25rem; line-height: 1.2; }
+        h2 { font-size: 1.35rem; }
+        h3 { font-size: 1.05rem; }
+        h4 { font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.05em; color: var(--text-gray); }
+
+        p { margin-bottom: 1rem; }
+        p:last-child { margin-bottom: 0; }
+
+        .card {
+            background: var(--bg-white);
+            border: var(--border);
+            box-shadow: var(--shadow-lg);
+            margin-bottom: 1.75rem;
+        }
+
+        .card-header {
+            padding: 1rem 1.5rem;
+            border-bottom: var(--border);
+            background: var(--bg-page);
+        }
+
+        .card-content { padding: 1.5rem; }
+
+        .code-block {
+            background: var(--text-dark);
+            color: var(--accent-teal);
+            border: var(--border);
+            padding: 1rem 1.25rem;
+            font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, monospace;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+            box-shadow: var(--shadow-sm);
+            white-space: pre-wrap;
+            word-break: break-word;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .copy-hint {
+            font-family: ui-monospace, monospace;
+            font-size: 0.7rem;
+            color: #888;
+            position: absolute;
+            top: 0.5rem;
+            right: 0.75rem;
+        }
+
+        .code-block:hover .copy-hint { color: var(--accent-teal); }
+
+        .btn {
+            display: inline-block;
+            padding: 0.75rem 1.5rem;
+            background: var(--accent-teal);
+            color: var(--text-black);
+            border: var(--border);
+            box-shadow: var(--shadow-sm);
+            text-decoration: none;
+            font-family: ui-monospace, monospace;
+            font-weight: 600;
+            transition: transform 0.05s;
+        }
+
+        .btn:active { transform: translate(2px, -2px); box-shadow: none; }
+
+        .hero {
+            background: var(--bg-blue);
+            border: var(--border);
+            box-shadow: var(--shadow-lg);
+            padding: 2.5rem 1.75rem;
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+
+        .hero h1 { margin-bottom: 0.75rem; }
+        .hero .tag {
+            font-family: ui-monospace, monospace;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p { font-size: 1.05rem; max-width: 620px; margin: 0 auto 1rem; color: var(--text-gray); }
+
+        ul, ol { margin: 0.75rem 0 1.25rem 1.5rem; }
+        li { margin-bottom: 0.5rem; }
+
+        .three-up {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+
+        @media (min-width: 700px) {
+            .three-up { grid-template-columns: repeat(3, 1fr); }
+        }
+
+        .three-up .item {
+            background: var(--bg-page);
+            border: var(--border);
+            padding: 1rem;
+        }
+
+        .three-up .item h4 { margin-bottom: 0.5rem; color: var(--accent-purple); }
+
+        pre.output {
+            background: #1a1a1a;
+            color: #d4d4d4;
+            border: var(--border);
+            padding: 1.25rem;
+            font-family: ui-monospace, monospace;
+            font-size: 0.78rem;
+            line-height: 1.5;
+            overflow-x: auto;
+            box-shadow: var(--shadow-sm);
+            margin: 1rem 0;
+            white-space: pre;
+        }
+
+        .footer {
+            text-align: center;
+            color: var(--text-muted);
+            font-family: ui-monospace, monospace;
+            font-size: 0.8rem;
+            margin-top: 3rem;
+            padding: 1.5rem;
+        }
+
+        .footer a { color: var(--accent-purple); }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+        <!-- HERO -->
+        <div class="hero">
+            <div class="tag">Free Claude Code skill · The Prompted</div>
+            <h1>Ad Account Morning Check</h1>
+            <p>One command. Three answers every Meta + Shopify operator needs every morning before they touch anything.</p>
+            <p><strong>Yesterday's real contribution margin.</strong> <strong>Day-over-day trend.</strong> <strong>Paused ads that spent more than $50 last week.</strong></p>
+            <div style="margin-top: 1.5rem;">
+                <a class="btn" href="https://github.com/theprompted/ad-account-morning-check">View on GitHub →</a>
+            </div>
+        </div>
+
+        <!-- THE PROBLEM -->
+        <div class="card">
+            <div class="card-header"><h2>Why this exists</h2></div>
+            <div class="card-content">
+                <p>Meta tells you ROAS. Shopify tells you revenue. Neither tells you whether you actually made money yesterday.</p>
+                <p>Every morning, most media buyers waste 10-15 minutes bouncing between Meta Ads Manager and Shopify Admin to assemble the same three answers. Then they make decisions on Meta's reported ROAS — which doesn't subtract COGS, shipping, payment processing, or returns.</p>
+                <p>This skill does the real math: starts from Shopify cash collected, subtracts your actual unit-economics costs, then subtracts ad spend. The number that comes out is <strong>what hit the bank after paying everything ad-related</strong>.</p>
+            </div>
+        </div>
+
+        <!-- WHAT YOU GET -->
+        <div class="card">
+            <div class="card-header"><h2>What you get</h2></div>
+            <div class="card-content">
+                <div class="three-up">
+                    <div class="item">
+                        <h4>Section 1</h4>
+                        <p><strong>Yesterday's real CM.</strong> Revenue, COGS, shipping, processing, returns reserve, ad spend, then the number that matters: contribution margin in dollars and percent.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Section 2</h4>
+                        <p><strong>5-day trend.</strong> Side-by-side daily CMs so today's number has context. Catches drift, weekday vs weekend patterns, and the days where pre-ad margin tanked.</p>
+                    </div>
+                    <div class="item">
+                        <h4>Section 3</h4>
+                        <p><strong>Paused-with-spend audit.</strong> Every ad that spent &gt;$50 in the last 7 days that's currently paused. The "good ads stranded" list. One-glance recovery.</p>
+                    </div>
+                </div>
+
+                <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">Output looks like this</h3>
+                <pre class="output">==================================================
+YESTERDAY (2026-05-18)
+==================================================
+  Revenue:           $1,338.36 USD
+  Ad spend (CAD):    $667.11  (USD ~$486.99)
+  Margin before ads: $705.41 (52.7%)
+  CM:                $218.42 (16.3%)
+  ROAS:              2.75x
+  Orders:            27  AOV: $49.57
+  Units:             44 (1.6/order)
+
+==================================================
+LAST 5 DAYS
+==================================================
+  2026-05-13 (Wed): rev=$1,122  spend=$421   CM=$300 (27%)  ROAS=3.65x
+  2026-05-15 (Fri): rev=$1,452  spend=$1,006 CM=$65  (5%)   ROAS=1.98x
+  2026-05-16 (Sat): rev=$1,751  spend=$1,145 CM=$127 (7%)   ROAS=2.09x
+  2026-05-17 (Sun): rev=$1,561  spend=$747   CM=$323 (21%)  ROAS=2.86x
+  2026-05-18 (Mon): rev=$1,338  spend=$667   CM=$218 (16%)  ROAS=2.75x
+
+==================================================
+PAUSED ADS WITH >$50 LAST 7D
+==================================================
+  ⚠ 1 paused ad with significant spend:
+
+  [PAUSED] $300.52 spent, 6 purch, ROAS 0.92x
+    BB2 — I'm Retired V-neck Copy 2
+    ad_id: 120215629113300199</pre>
+            </div>
+        </div>
+
+        <!-- THE CM DIFFERENCE -->
+        <div class="card">
+            <div class="card-header"><h2>Why contribution margin and not ROAS?</h2></div>
+            <div class="card-content">
+                <p>A Meta-reported 2.0x ROAS sounds profitable. But:</p>
+                <ul>
+                    <li><strong>COGS</strong> typically 30-40% of revenue</li>
+                    <li><strong>Shipping</strong> ~5-10% (your real cost, not what you charge)</li>
+                    <li><strong>Payment processing</strong> ~3-4%</li>
+                    <li><strong>Returns reserve</strong> ~2%</li>
+                    <li><strong>Ad spend</strong> already in the ROAS denominator</li>
+                </ul>
+                <p>At 2.0x ROAS with typical unit economics, contribution margin is often <strong>5-8%</strong> — barely above zero. Scale at "2x ROAS" and you scale near break-even.</p>
+                <p>This skill makes you face the real number every morning, so the first decision of the day is grounded in actuals — not Meta's reported revenue.</p>
+            </div>
+        </div>
+
+        <!-- HOW TO INSTALL -->
+        <div class="card">
+            <div class="card-header"><h2>How to install it</h2></div>
+            <div class="card-content">
+                <p>Tell Claude Code:</p>
+                <div class="code-block" onclick="copyCode(this)">
+                    <span class="copy-hint">click to copy</span>Go read this repo and install all skills and dependencies: https://github.com/theprompted/ad-account-morning-check
+                </div>
+
+                <p>Claude Code handles the rest. Once installed, set up your <code>.env</code> with your Meta + Shopify tokens, copy <code>unit-economics.template.json</code> to <code>unit-economics.json</code> and fill in your cost structure, then run:</p>
+                <div class="code-block" onclick="copyCode(this)">
+                    <span class="copy-hint">click to copy</span>morning check
+                </div>
+            </div>
+        </div>
+
+        <!-- REQUIREMENTS -->
+        <div class="card">
+            <div class="card-header"><h2>Requirements</h2></div>
+            <div class="card-content">
+                <ul>
+                    <li><a href="https://claude.ai/code">Claude Code</a></li>
+                    <li>Python 3.9+</li>
+                    <li>A Meta Marketing API access token (<strong>System User token strongly preferred</strong> — non-expiring)</li>
+                    <li>A Shopify Admin API access token with <code>read_orders</code>, <code>read_products</code>, <code>read_inventory</code> scopes</li>
+                    <li>Your unit-economics costs in a JSON file (template provided in the repo)</li>
+                </ul>
+                <p>Meta user tokens expire every 60 days and will silently break this skill when they do. Use a System User token from Meta Business Suite. The repo README has the click-by-click for both Meta and Shopify token setup.</p>
+            </div>
+        </div>
+
+        <!-- COMING SOON -->
+        <div class="card">
+            <div class="card-header"><h2>Related skills (coming soon)</h2></div>
+            <div class="card-content">
+                <p>This is the first of a family of free Claude Code skills for media buyers. Coming next:</p>
+                <ul>
+                    <li><strong>cost-cap-walkdown</strong> — the $1-at-a-time cost cap adjustment methodology in 2-day cycles. Pair with this skill: morning check identifies candidates, walkdown adjusts them.</li>
+                    <li><strong>attribution-adjusted-roas</strong> — calculate the Meta-reported ROAS goal you need to hit a target CM%, accounting for the gap between Meta-attributed and Shopify-actual revenue.</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer">
+            Built by <a href="https://theprompted.com">The Prompted</a> — operators using AI in real DTC media buying, not theorizing about it.<br>
+            Bundled from ~$10K/month live Meta spend across multiple Shopify accounts.
+        </div>
+
+    </div>
+
+    <script>
+        function copyCode(el) {
+            const text = el.innerText.replace('click to copy', '').trim();
+            navigator.clipboard.writeText(text);
+            const hint = el.querySelector('.copy-hint');
+            const original = hint.innerText;
+            hint.innerText = 'copied!';
+            setTimeout(() => hint.innerText = original, 1500);
+        }
+    </script>
+
+</body>
+</html>

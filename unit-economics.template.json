@@ -1,0 +1,16 @@
+{
+  "_README": "Copy this file to unit-economics.json and fill in YOUR cost structure. These rates are the most important inputs — get them wrong and the CM number lies.",
+  "default_cogs_pct_of_subtotal": 0.33,
+  "_default_cogs_pct_of_subtotal_NOTE": "Cost of goods as a fraction of subtotal_price (after discounts, before shipping). 0.33 means $33 COGS on a $100 subtotal. Get this from your supplier costs.",
+  "shipping_cost_avg": 5.50,
+  "_shipping_cost_avg_NOTE": "YOUR cost to ship one order (USPS / UPS / fulfillment center fee). Not what you charge the customer.",
+  "processing_pct": 0.041,
+  "_processing_pct_NOTE": "Payment processor fee as fraction of total_price. Shopify Payments + Shop Pay typically 2.6-3.9%; Stripe + apps add ~1%. 0.041 = 4.1% — a defensible blended rate.",
+  "returns_reserve_pct": 0.02,
+  "_returns_reserve_pct_NOTE": "Returns + chargebacks as fraction of total_price. 0.02 = 2% — typical apparel/accessory range. Higher for fit-sensitive categories.",
+  "usd_cad_rate": 0.73,
+  "_usd_cad_rate_NOTE": "USD per 1 CAD. Only needed if your spend currency differs from revenue currency. If both are USD, set to 1.0.",
+  "currency_spend": "CAD",
+  "currency_revenue": "USD",
+  "_currency_NOTE": "Set to the currencies your Meta ad account and Shopify store use. If both are USD, set both to USD and usd_cad_rate to 1.0."
+}
