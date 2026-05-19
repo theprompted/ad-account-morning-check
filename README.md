@@ -1,6 +1,6 @@
 # Ad Account Morning Check
 
-**For Prompted Accelerator members.** Access at [skool.com/the-prompted](https://www.skool.com/the-prompted).
+**For Syndicate members.**
 
 A Claude Code skill for media buyers running ~$500-$3K/day on Meta. One command, three answers:
 
@@ -145,14 +145,14 @@ That's it.
 - **It doesn't attribute orders to ads.** That's a different problem and Meta's attribution is unreliable enough that it's a separate skill.
 - **It doesn't replace daily Shopify ops or customer service work.** It's the morning ad-account check, nothing else.
 
-## Related skills (Accelerator family)
+## Related skills (Syndicate family)
 
 - **cost-cap-walkdown** — $1-at-a-time cost cap adjustment methodology in 2-day cycles. Pair with this skill: morning check identifies candidates, walkdown adjusts them.
 - **attribution-adjusted-roas** — calculate the Meta-reported ROAS you need to hit a target CM%, accounting for the gap between Meta-attributed and Shopify-actual revenue.
 
 ## Access
 
-This skill ships with the **Prompted Accelerator** at [skool.com/the-prompted](https://www.skool.com/the-prompted). Members get the full operator skill family, support, and live sessions where these skills are used on real ad accounts.
+This skill ships inside the **Syndicate**. Members get the full operator skill family, support, and live sessions where these skills are used on real ad accounts.
 
 ## Built by
 
