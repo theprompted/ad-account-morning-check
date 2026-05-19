@@ -1,5 +1,7 @@
 # Ad Account Morning Check
 
+**For Prompted Accelerator members.** Access at [skool.com/the-prompted](https://www.skool.com/the-prompted).
+
 A Claude Code skill for media buyers running ~$500-$3K/day on Meta. One command, three answers:
 
 1. **Yesterday's real contribution margin** — Shopify revenue minus COGS, shipping, processing, returns, and ad spend. Not Meta's reported ROAS.
@@ -143,11 +145,15 @@ That's it.
 - **It doesn't attribute orders to ads.** That's a different problem and Meta's attribution is unreliable enough that it's a separate skill.
 - **It doesn't replace daily Shopify ops or customer service work.** It's the morning ad-account check, nothing else.
 
-## Related skills
+## Related skills (Accelerator family)
 
-- **cost-cap-walkdown** — $1-at-a-time cost cap adjustment methodology in 2-day cycles. Pair with this skill: morning check identifies candidates, walkdown adjusts them. (Coming soon.)
-- **attribution-adjusted-roas** — calculate the Meta-reported ROAS you need to hit a target CM%, accounting for the gap between Meta-attributed and Shopify-actual revenue. (Coming soon.)
+- **cost-cap-walkdown** — $1-at-a-time cost cap adjustment methodology in 2-day cycles. Pair with this skill: morning check identifies candidates, walkdown adjusts them.
+- **attribution-adjusted-roas** — calculate the Meta-reported ROAS you need to hit a target CM%, accounting for the gap between Meta-attributed and Shopify-actual revenue.
+
+## Access
+
+This skill ships with the **Prompted Accelerator** at [skool.com/the-prompted](https://www.skool.com/the-prompted). Members get the full operator skill family, support, and live sessions where these skills are used on real ad accounts.
 
 ## Built by
 
-[The Prompted](https://theprompted.com) — operators using AI in real DTC media buying, not theorizing about it. Skill bundled from ~$10K/month live Meta spend on multiple Shopify accounts.
+[The Prompted](https://theprompted.com) — operators using AI in real DTC media buying, not theorizing about it. Skill bundle distilled from active ~$10K/month Meta spend across multiple Shopify accounts.

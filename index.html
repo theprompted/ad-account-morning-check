@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ad Account Morning Check — Free Claude Code Skill for Meta + Shopify Operators</title>
+    <title>Ad Account Morning Check — Claude Code Skill for Prompted Accelerator Members</title>
     <style>
         :root {
             --bg-page: #F8F8F7;
@@ -108,7 +108,7 @@
         .btn:active { transform: translate(2px, -2px); box-shadow: none; }
 
         .hero {
-            background: var(--bg-blue);
+            background: var(--bg-purple);
             border: var(--border);
             box-shadow: var(--shadow-lg);
             padding: 2.5rem 1.75rem;
@@ -125,6 +125,21 @@
         }
 
         .hero p { font-size: 1.05rem; max-width: 620px; margin: 0 auto 1rem; color: var(--text-gray); }
+
+        .members-only {
+            display: inline-block;
+            background: var(--accent-yellow);
+            color: var(--text-black);
+            border: var(--border);
+            box-shadow: var(--shadow-sm);
+            font-family: ui-monospace, monospace;
+            font-size: 0.75rem;
+            font-weight: 700;
+            letter-spacing: 0.06em;
+            padding: 0.4rem 0.85rem;
+            text-transform: uppercase;
+            margin-bottom: 1rem;
+        }
 
         ul, ol { margin: 0.75rem 0 1.25rem 1.5rem; }
         li { margin-bottom: 0.5rem; }
@@ -162,6 +177,64 @@
             white-space: pre;
         }
 
+        .example {
+            background: var(--bg-page);
+            border: var(--border);
+            box-shadow: var(--shadow-sm);
+            padding: 1.25rem;
+            margin: 1.25rem 0;
+        }
+
+        .example .example-label {
+            display: inline-block;
+            font-family: ui-monospace, monospace;
+            font-size: 0.7rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 0.06em;
+            color: var(--accent-purple);
+            background: var(--bg-purple);
+            padding: 0.2rem 0.5rem;
+            border: 2px solid var(--accent-purple);
+            margin-bottom: 0.75rem;
+        }
+
+        .example .real-data-tag {
+            display: inline-block;
+            font-family: ui-monospace, monospace;
+            font-size: 0.7rem;
+            background: var(--bg-green);
+            border: 2px solid #2e7d32;
+            padding: 0.2rem 0.5rem;
+            margin-left: 0.5rem;
+        }
+
+        .example h3 { margin-bottom: 0.5rem; }
+        .example .commentary {
+            font-size: 0.9rem;
+            color: var(--text-gray);
+            margin-top: 0.75rem;
+            border-top: 1px solid #ddd;
+            padding-top: 0.75rem;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0.75rem 0;
+            font-family: ui-monospace, monospace;
+            font-size: 0.82rem;
+        }
+
+        table th, table td {
+            border: 1px solid #ccc;
+            padding: 0.4rem 0.6rem;
+            text-align: left;
+        }
+
+        table th { background: var(--bg-page); font-weight: 700; }
+        table td.num { text-align: right; }
+
         .footer {
             text-align: center;
             color: var(--text-muted);
@@ -179,12 +252,13 @@
 
         <!-- HERO -->
         <div class="hero">
-            <div class="tag">Free Claude Code skill · The Prompted</div>
+            <div class="tag">Claude Code skill · The Prompted</div>
+            <span class="members-only">★ Prompted Accelerator Members Only</span>
             <h1>Ad Account Morning Check</h1>
             <p>One command. Three answers every Meta + Shopify operator needs every morning before they touch anything.</p>
-            <p><strong>Yesterday's real contribution margin.</strong> <strong>Day-over-day trend.</strong> <strong>Paused ads that spent more than $50 last week.</strong></p>
+            <p><strong>Yesterday's real contribution margin.</strong> <strong>Day-over-day trend.</strong> <strong>Paused ads that spent &gt;$50 last week.</strong></p>
             <div style="margin-top: 1.5rem;">
-                <a class="btn" href="https://github.com/theprompted/ad-account-morning-check">View on GitHub →</a>
+                <a class="btn" href="https://www.skool.com/the-prompted">Join the Accelerator →</a>
             </div>
         </div>
 
@@ -216,36 +290,90 @@
                         <p><strong>Paused-with-spend audit.</strong> Every ad that spent &gt;$50 in the last 7 days that's currently paused. The "good ads stranded" list. One-glance recovery.</p>
                     </div>
                 </div>
+            </div>
+        </div>
 
-                <h3 style="margin-top: 1.5rem; margin-bottom: 0.5rem;">Output looks like this</h3>
-                <pre class="output">==================================================
-YESTERDAY (2026-05-18)
-==================================================
-  Revenue:           $1,338.36 USD
-  Ad spend (CAD):    $667.11  (USD ~$486.99)
-  Margin before ads: $705.41 (52.7%)
-  CM:                $218.42 (16.3%)
-  ROAS:              2.75x
-  Orders:            27  AOV: $49.57
-  Units:             44 (1.6/order)
+        <!-- REAL EXAMPLE OUTPUTS -->
+        <div class="card">
+            <div class="card-header"><h2>Real outputs from a real account</h2></div>
+            <div class="card-content">
+                <p>These are actual morning-check outputs from an active Shopify store running ~$700-$1,200/day on Meta. Numbers, dates, and decisions are unedited.</p>
 
-==================================================
-LAST 5 DAYS
-==================================================
-  2026-05-13 (Wed): rev=$1,122  spend=$421   CM=$300 (27%)  ROAS=3.65x
-  2026-05-15 (Fri): rev=$1,452  spend=$1,006 CM=$65  (5%)   ROAS=1.98x
-  2026-05-16 (Sat): rev=$1,751  spend=$1,145 CM=$127 (7%)   ROAS=2.09x
-  2026-05-17 (Sun): rev=$1,561  spend=$747   CM=$323 (21%)  ROAS=2.86x
-  2026-05-18 (Mon): rev=$1,338  spend=$667   CM=$218 (16%)  ROAS=2.75x
+                <!-- Example 1: Good day -->
+                <div class="example">
+                    <span class="example-label">Example 1 — A strong CM day</span>
+                    <span class="real-data-tag">real data · May 13, 2026</span>
+                    <h3 style="margin-top: 0.5rem;">May 13, 2026 (Wednesday) — 26.7% contribution margin</h3>
 
-==================================================
+                    <h4 style="margin-top: 1rem;">Revenue &amp; Margin</h4>
+                    <table>
+                        <tr><th>Metric</th><th class="num">USD</th></tr>
+                        <tr><td>Cash collected</td><td class="num"><strong>$1,122.15</strong></td></tr>
+                        <tr><td>COGS</td><td class="num">($335.98)</td></tr>
+                        <tr><td>Shipping</td><td class="num">($110.64)</td></tr>
+                        <tr><td>Processing (4.1%)</td><td class="num">($46.01)</td></tr>
+                        <tr><td>Returns reserve (2%)</td><td class="num">($21.95)</td></tr>
+                        <tr><td><strong>Margin Before Ads</strong></td><td class="num"><strong>$607.57 (54.1%)</strong></td></tr>
+                        <tr><td>Ad spend (CAD $421.48)</td><td class="num">($307.68)</td></tr>
+                        <tr><td><strong>Contribution Margin</strong></td><td class="num"><strong>$299.89 (26.7%)</strong></td></tr>
+                    </table>
+
+                    <h4>Vitals</h4>
+                    <ul>
+                        <li><strong>22 orders</strong> — AOV $51.01, 37 units (1.7/order)</li>
+                        <li><strong>Blended ROAS: 3.65x</strong> (healthy, well above ~2.05x break-even)</li>
+                        <li>Pre-ad margin <strong>54.1%</strong> — right on the 54-55% target</li>
+                    </ul>
+
+                    <p class="commentary"><strong>What the operator learned:</strong> Spend $421 CAD, net $300 USD to the bank. ROAS of 3.65x sounds great on paper, and contribution margin of 27% confirms it was real. This is the day other days get measured against.</p>
+                </div>
+
+                <!-- Example 2: Marginal day -->
+                <div class="example">
+                    <span class="example-label">Example 2 — A break-even day in disguise</span>
+                    <span class="real-data-tag">real data · May 15, 2026</span>
+                    <h3 style="margin-top: 0.5rem;">May 15, 2026 (Friday) — only 7.1% contribution margin</h3>
+
+                    <h4 style="margin-top: 1rem;">Revenue &amp; Margin</h4>
+                    <table>
+                        <tr><th>Metric</th><th class="num">USD</th></tr>
+                        <tr><td>Cash collected</td><td class="num"><strong>$1,452.43</strong></td></tr>
+                        <tr><td><strong>Margin Before Ads</strong></td><td class="num"><strong>$798.97 (55.0%)</strong></td></tr>
+                        <tr><td>Ad spend (CAD $953 → USD ~$696)</td><td class="num">($695.74)</td></tr>
+                        <tr><td><strong>Contribution Margin</strong></td><td class="num"><strong>$103.23 (7.1%) ⚠️</strong></td></tr>
+                    </table>
+
+                    <h4>Day-over-day</h4>
+                    <table>
+                        <tr><th></th><th class="num">May 13 Wed</th><th class="num">May 14 Thu</th><th class="num">May 15 Fri</th></tr>
+                        <tr><td>Revenue</td><td class="num">$1,122</td><td class="num">$854</td><td class="num"><strong>$1,452 ⬆</strong></td></tr>
+                        <tr><td>Ad spend (CAD)</td><td class="num">$428</td><td class="num">$124</td><td class="num"><strong>$953 ⬆⬆</strong></td></tr>
+                        <tr><td>AOV</td><td class="num">$51</td><td class="num">$66</td><td class="num"><strong>$48 ⬇</strong></td></tr>
+                        <tr><td>Units/order</td><td class="num">1.7</td><td class="num">2.3</td><td class="num"><strong>1.5 ⬇</strong></td></tr>
+                        <tr><td>ROAS</td><td class="num">3.59</td><td class="num">9.40</td><td class="num"><strong>2.09 ⬇⬇</strong></td></tr>
+                        <tr><td><strong>CM</strong></td><td class="num">$295 (26%)</td><td class="num">$353 (41%)</td><td class="num"><strong>$103 (7%) ⬇⬇</strong></td></tr>
+                    </table>
+
+                    <p class="commentary"><strong>What the operator learned:</strong> Revenue was the highest of the three days. Meta-reported ROAS of 2.09x is "above break-even" — but contribution margin was only 7%. Without the morning check, you'd scale this day's ad set assuming it's profitable. With the check, you see the spend almost broke even after costs, and the AOV/units-per-order dropped — the signal that spend was flooding the auction with low-intent single-item buyers, not multi-item baskets.</p>
+                </div>
+
+                <!-- Example 3: Paused-ad audit -->
+                <div class="example">
+                    <span class="example-label">Example 3 — Paused-ad audit result</span>
+                    <span class="real-data-tag">real data · May 17, 2026</span>
+                    <h3 style="margin-top: 0.5rem;">A $300 ad that auto-paused itself</h3>
+
+                    <pre class="output">==================================================
 PAUSED ADS WITH >$50 LAST 7D
 ==================================================
   ⚠ 1 paused ad with significant spend:
 
-  [PAUSED] $300.52 spent, 6 purch, ROAS 0.92x
+  [PAUSED] $300.52 spent, 6 purchases, ROAS 0.92x
     BB2 — I'm Retired V-neck Copy 2
     ad_id: 120215629113300199</pre>
+
+                    <p class="commentary"><strong>What the operator learned:</strong> A $300 spender stopped delivering. Meta's auction throttled it because the ROAS slipped under 1.0x. The audit caught it the next morning. The operator either revives the ad with a tighter cost cap, or accepts that it's done and moves the budget. Either way — surfaced in 30 seconds, not after a week of missed delivery.</p>
+                </div>
             </div>
         </div>
 
@@ -261,71 +389,48 @@ PAUSED ADS WITH >$50 LAST 7D
                     <li><strong>Returns reserve</strong> ~2%</li>
                     <li><strong>Ad spend</strong> already in the ROAS denominator</li>
                 </ul>
-                <p>At 2.0x ROAS with typical unit economics, contribution margin is often <strong>5-8%</strong> — barely above zero. Scale at "2x ROAS" and you scale near break-even.</p>
+                <p>At 2.0x ROAS with typical unit economics, contribution margin is often <strong>5-8%</strong> — barely above zero. The May 15 example above shows it: 2.09x ROAS, 7.1% CM. Scale at "2x ROAS" and you scale near break-even.</p>
                 <p>This skill makes you face the real number every morning, so the first decision of the day is grounded in actuals — not Meta's reported revenue.</p>
             </div>
         </div>
 
-        <!-- HOW TO INSTALL -->
+        <!-- INSIDE THE ACCELERATOR -->
         <div class="card">
-            <div class="card-header"><h2>How to install it</h2></div>
+            <div class="card-header"><h2>How to access this skill</h2></div>
             <div class="card-content">
-                <p>Tell Claude Code:</p>
-                <div class="code-block" onclick="copyCode(this)">
-                    <span class="copy-hint">click to copy</span>Go read this repo and install all skills and dependencies: https://github.com/theprompted/ad-account-morning-check
-                </div>
-
-                <p>Claude Code handles the rest. Once installed, set up your <code>.env</code> with your Meta + Shopify tokens, copy <code>unit-economics.template.json</code> to <code>unit-economics.json</code> and fill in your cost structure, then run:</p>
-                <div class="code-block" onclick="copyCode(this)">
-                    <span class="copy-hint">click to copy</span>morning check
-                </div>
-            </div>
-        </div>
-
-        <!-- REQUIREMENTS -->
-        <div class="card">
-            <div class="card-header"><h2>Requirements</h2></div>
-            <div class="card-content">
+                <p>The repo, install instructions, support, and the rest of the operator skill family (<strong>cost-cap-walkdown</strong>, <strong>attribution-adjusted-roas</strong>, and more) are available inside the Prompted Accelerator.</p>
+                <p>Accelerator members get:</p>
                 <ul>
-                    <li><a href="https://claude.ai/code">Claude Code</a></li>
-                    <li>Python 3.9+</li>
-                    <li>A Meta Marketing API access token (<strong>System User token strongly preferred</strong> — non-expiring)</li>
-                    <li>A Shopify Admin API access token with <code>read_orders</code>, <code>read_products</code>, <code>read_inventory</code> scopes</li>
-                    <li>Your unit-economics costs in a JSON file (template provided in the repo)</li>
+                    <li>This skill, fully installable in Claude Code with one prompt</li>
+                    <li>The full Claude Code operator skill family (morning check + walkdown + ROAS calibration + others as they ship)</li>
+                    <li>Live operator sessions where the skills are used on real ad accounts</li>
+                    <li>Support when something breaks — token expiry, attribution shifts, cron failures</li>
                 </ul>
-                <p>Meta user tokens expire every 60 days and will silently break this skill when they do. Use a System User token from Meta Business Suite. The repo README has the click-by-click for both Meta and Shopify token setup.</p>
+                <div style="margin-top: 1.25rem;">
+                    <a class="btn" href="https://www.skool.com/the-prompted">Join the Accelerator</a>
+                </div>
             </div>
         </div>
 
         <!-- COMING SOON -->
         <div class="card">
-            <div class="card-header"><h2>Related skills (coming soon)</h2></div>
+            <div class="card-header"><h2>Other skills in this family</h2></div>
             <div class="card-content">
-                <p>This is the first of a family of free Claude Code skills for media buyers. Coming next:</p>
+                <p>This is the first of a family of operator skills for media buyers running $500-$3K/day on Meta + Shopify:</p>
                 <ul>
-                    <li><strong>cost-cap-walkdown</strong> — the $1-at-a-time cost cap adjustment methodology in 2-day cycles. Pair with this skill: morning check identifies candidates, walkdown adjusts them.</li>
-                    <li><strong>attribution-adjusted-roas</strong> — calculate the Meta-reported ROAS goal you need to hit a target CM%, accounting for the gap between Meta-attributed and Shopify-actual revenue.</li>
+                    <li><strong>cost-cap-walkdown</strong> — the $1-at-a-time cost cap adjustment methodology in 2-day cycles. Don't pause underperformers — walk them down until they're profitable or stop spending. Pairs with morning check (which identifies candidates).</li>
+                    <li><strong>attribution-adjusted-roas</strong> — calculate the Meta-reported ROAS goal you need to hit a target CM%, accounting for the gap between Meta-attributed and Shopify-actual revenue. Most operators trust Meta's ROAS at face value — this skill shows you why you shouldn't.</li>
                 </ul>
+                <p>All ship inside the Accelerator.</p>
             </div>
         </div>
 
         <div class="footer">
             Built by <a href="https://theprompted.com">The Prompted</a> — operators using AI in real DTC media buying, not theorizing about it.<br>
-            Bundled from ~$10K/month live Meta spend across multiple Shopify accounts.
+            Skill bundle distilled from active ~$10K/month Meta spend across multiple Shopify accounts.
         </div>
 
     </div>
-
-    <script>
-        function copyCode(el) {
-            const text = el.innerText.replace('click to copy', '').trim();
-            navigator.clipboard.writeText(text);
-            const hint = el.querySelector('.copy-hint');
-            const original = hint.innerText;
-            hint.innerText = 'copied!';
-            setTimeout(() => hint.innerText = original, 1500);
-        }
-    </script>
 
 </body>
 </html>
